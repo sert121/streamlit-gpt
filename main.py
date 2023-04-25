@@ -76,7 +76,7 @@ def generate_roadmap(urls):
 if __name__ == '__main__':
 
     # user_input = input("Enter a url: ")
-
+    st.title("TribeGPT")
     user_input = st.text_input("Enter a url: ", key =999)
 
     if st.button('Submit'):

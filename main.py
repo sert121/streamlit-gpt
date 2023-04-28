@@ -57,9 +57,9 @@ def generate_roadmap(urls, prompt_base):
     chat_query = [{"role":"system", "content": system_text}, {"role":"user", "content": prompt}]
     response = openai.ChatCompletion.create(
         messages=chat_query,
-        model="gpt-3.5-turbo",
+        model="gpt-4-0314",
         temperature=0,
-        max_tokens=2048,
+        max_tokens=8192,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0,
